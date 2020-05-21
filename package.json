@@ -1,0 +1,47 @@
+{
+  "name": "markdown-outline-for-github",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "webpack",
+    "package": "webpack && node scripts/package.js",
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=12.14.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitsuruog/markdown-outline-for-github.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mitsuruog/markdown-outline-for-github/issues"
+  },
+  "homepage": "https://github.com/mitsuruog/markdown-outline-for-github#readme",
+  "devDependencies": {
+    "@testing-library/dom": "7.5.7",
+    "@testing-library/jest-dom": "5.8.0",
+    "@types/chrome": "0.0.113",
+    "@types/jest": "25.2.3",
+    "@typescript-eslint/eslint-plugin": "2.34.0",
+    "@typescript-eslint/parser": "2.34.0",
+    "archiver": "4.0.1",
+    "clean-webpack-plugin": "3.0.0",
+    "copy-webpack-plugin": "5.1.1",
+    "css-loader": "3.5.3",
+    "eslint": "7.0.0",
+    "eslint-loader": "4.0.2",
+    "jest": "26.0.1",
+    "sass": "1.26.5",
+    "sass-loader": "8.0.2",
+    "style-loader": "1.2.1",
+    "ts-jest": "26.0.0",
+    "ts-loader": "7.0.4",
+    "typescript": "3.9.3",
+    "webpack": "4.43.0",
+    "webpack-cli": "3.3.11"
+  }
+}

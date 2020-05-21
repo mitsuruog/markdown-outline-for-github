@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test parse should parse the markdown 1`] = `
+<ul
+  class="mitsuruog-markdown-outline__item-wrapper"
+>
+  <li
+    class="mitsuruog-markdown-outline__h1 mitsuruog-markdown-outline__item"
+  >
+    <a
+      href="http://localhost/h1"
+    >
+      H1
+    </a>
+  </li>
+  <li
+    class="mitsuruog-markdown-outline__h2 mitsuruog-markdown-outline__item"
+  >
+    <a
+      href="http://localhost/h2"
+    >
+      H2
+    </a>
+  </li>
+  <li
+    class="mitsuruog-markdown-outline__h3 mitsuruog-markdown-outline__item"
+  >
+    <a
+      href="http://localhost/h3"
+    >
+      H3
+    </a>
+  </li>
+  <li
+    class="mitsuruog-markdown-outline__h4 mitsuruog-markdown-outline__item"
+  >
+    <a
+      href="http://localhost/h4"
+    >
+      H4
+    </a>
+  </li>
+  <li
+    class="mitsuruog-markdown-outline__h5 mitsuruog-markdown-outline__item"
+  >
+    <a
+      href="http://localhost/h5"
+    >
+      H5
+    </a>
+  </li>
+  <li
+    class="mitsuruog-markdown-outline__h6 mitsuruog-markdown-outline__item"
+  >
+    <a
+      href="http://localhost/h6"
+    >
+      H6
+    </a>
+  </li>
+</ul>
+`;

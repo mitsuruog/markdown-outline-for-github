@@ -1,0 +1,106 @@
+$color-border-1: #e1e4e8;
+$color-background-1: #fafbfc;
+$color-background-2: #e8e9eb;
+$color-text-1: #24292e;
+$color-text-2: #586069;
+
+$text-indent-unit: 8px;
+$contents-width: 200px;
+$position-top: 45%;
+$z-index: 1000000001;
+
+[mitsuruog-markdown-outline] {
+  [mitsuruog-markdown-outline__button] {
+    position: fixed;
+    top: $position-top;
+    left: 0;
+    z-index: $z-index;
+  }
+
+  [mitsuruog-markdown-outline__contents] {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -$contents-width;
+    width: $contents-width;
+  }
+
+  &.is-open {
+    [mitsuruog-markdown-outline__contents] {
+      left: 0;
+      transition: 0.25s;
+      z-index: $z-index + 1;
+    }
+  }
+}
+
+.mitsuruog-markdown-outline {
+  .mitsuruog-markdown-outline__button {
+    padding: 4px 16px;
+    border-radius: 3px 0 0 3px;
+    color: $color-text-2;
+    white-space: nowrap;
+    padding: 16px 4px;
+    transform: rotate(-180deg);
+    writing-mode: tb-rl;
+    background-color: $color-background-1;
+    border: 1px solid $color-border-1;
+    cursor: pointer;
+  }
+
+  .mitsuruog-markdown-outline__header {
+    position: sticky;
+    top: 0;
+    padding: 8px;
+    display: flex;
+    justify-content: flex-end;
+    background: $color-background-2;
+  }
+
+  .mitsuruog-markdown-outline__close {
+    // background: $color-background-2;
+  }
+
+  .mitsuruog-markdown-outline__contents {
+    background-color: $color-background-1;
+    border-right: 1px solid $color-border-1;
+    overflow: auto;
+  }
+
+  .mitsuruog-markdown-outline__item-wrapper {
+    padding: 8px 16px 16px 8px;
+    list-style: none;
+  }
+
+  .mitsuruog-markdown-outline__item {
+    margin-bottom: 8px;
+
+    a {
+      color: $color-text-1;
+    }
+  }
+
+  .mitsuruog-markdown-outline__h1 {
+    font-weight: bold;
+  }
+
+  .mitsuruog-markdown-outline__h2 {
+    margin-left: $text-indent-unit * 1;
+  }
+
+  .mitsuruog-markdown-outline__h3 {
+    margin-left: $text-indent-unit * 2;
+  }
+
+  .mitsuruog-markdown-outline__h4 {
+    margin-left: $text-indent-unit * 3;
+  }
+
+  .mitsuruog-markdown-outline__h5 {
+    margin-left: $text-indent-unit * 4;
+  }
+
+  .mitsuruog-markdown-outline__h6 {
+    margin-left: $text-indent-unit * 5;
+  }
+}

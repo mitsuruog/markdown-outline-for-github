@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - lts/*
+install:
+  - npm install
+  - npm install codecov -g
+scripts:
+  - npm test
+after_success:
+  # Upload coverage report to Codecov
+  - codecov

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack",
     "package": "webpack && node scripts/package.js",
-    "test": "jest"
+    "test": "jest  --coverage --env=jsdom --runInBand"
   },
   "engines": {
     "node": ">=12.14.1"

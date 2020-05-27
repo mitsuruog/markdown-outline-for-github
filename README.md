@@ -8,7 +8,7 @@ Chrome extensions that shows markdown outline quickly.
 
 ## Install
 
-- [Chrome web store]()
+- [Chrome web store](https://chrome.google.com/webstore/detail/nkbceicafhlobddjmlflmhbloffdekcd)
 
 ## Features
 

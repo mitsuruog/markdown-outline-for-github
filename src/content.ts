@@ -25,7 +25,8 @@ function main() {
   $closeButton.setAttributeNode(
     document.createAttribute("mitsuruog-markdown-outline__close-button")
   );
-  $closeButton.textContent = "close";
+  $closeButton.textContent = "Close";
+  $closeButton.classList.add("btn", "btn-sm");
 
   const $contentsHeader = document.createElement("div");
   $contentsHeader.classList.add("mitsuruog-markdown-outline__header");

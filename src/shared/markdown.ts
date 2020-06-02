@@ -21,5 +21,8 @@ export function parse($markdown: Element) {
 }
 
 export function getMarkdown(pathname: string, $body: HTMLElement) {
-  return $body.querySelector("article.markdown-body");
+  const contents = $body.querySelectorAll(
+    "article.markdown-body, #wiki-body .markdown-body"
+  );
+  return contents.length > 0 ? contents[0] : null;
 }
